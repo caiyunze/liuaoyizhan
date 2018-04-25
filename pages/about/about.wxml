@@ -1,0 +1,11 @@
+<!--pages/about/about.wxml-->
+<text>这是关于我们</text>
+
+<block wx:for="{{arrar}}">
+  <block wx:if="{{item.name}}">
+  <view>名字是：{{item.name}}</view>
+  </block>
+  <block wx:if="{{item.age}}">
+  <view>年龄是：{{item.age}}</view>
+  </block>
+</block>

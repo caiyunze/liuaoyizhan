@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/cart/cart",
+    "pages/order/order",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#20ae07",
+    "navigationBarTitleText": "鳌岛驿站",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance":50,
+    "backgroundColorTop":"#eee"
+  },
+  "tabBar": {
+    "color":"#000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/image/首页.png",
+      "selectedIconPath": "pages/image/首页_act.png"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
+      "iconPath": "pages/image/购物车.png",
+      "selectedIconPath": "pages/image/购物车_act.png"
+    },
+    {
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath": "pages/image/订单.png",
+      "selectedIconPath": "pages/image/订单_act.png"
+    },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于我们",
+        "iconPath": "pages/image/关于我.png",
+        "selectedIconPath": "pages/image/关于我_act.png"
+      }
+    ]
+  }
+}
