@@ -114,13 +114,14 @@
 
 /* 价格数量 */
 .section_con_price_and_buy{
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  margin-start: auto;
+  align-items: center;
+  justify-content: space-between; 
   margin-top:15px; 
 }
 .section_con_price {
-  width: 80rpx;
+  width: 180rpx;
   color: #d24a58;
 }
 

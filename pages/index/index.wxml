@@ -31,7 +31,7 @@
     <!--商品列表-->
     <view class='nav_section'>
       <view wx:if="{{mainlist}}">
-        <block wx:for="{{mainlist}}" wx:key="jdx"  wx:for-index="jdx" >
+        <block wx:for="{{mainlist}}" wx:key="jdx" wx:for-index="jdx">
           <view class="nav_section_item">
             <!--商品images-->
             <view class="section_images">
@@ -52,18 +52,16 @@
               <view class="section_con_message">
                 {{item.message}}
               </view>
-
               <view class="section_con_price_and_buy">
                 <text class="section_con_price">{{item.price}}</text>
-                <view class="section_buy_reduce">
-                  <image src="/pages/image/index/reduce.png" data-jdx="{{jdx}}" data-subjectid="{{subject_id}}"  data-title="{{item.subject_title}}"  data-num="{{item.buy_num}}" wx:if="{{item.buy_num>0}}" data-price="{{item.price}}" bindtap="reduceNum"></image>
-                </view>
 
-                <text wx:if="{{item.buy_num > 0}}">{{item.buy_num}}</text>
+                <image class='section_buy_reduce' style="width: 40rpx; height: 40rpx;vertical-align:text-bottom;" src="/pages/image/index/reduce.png" data-jdx="{{jdx}}" data-subjectid="{{subject_id}}" data-title="{{item.subject_title}}" data-num="{{item.buy_num}}" wx:if="{{item.buy_num>0}}"
+                  data-price="{{item.price}}" bindtap="reduceNum"></image>
 
-                <view class="section_buy" >
-                  <image src="/pages/image/index/add.png" data-jdx="{{jdx}}"  data-subjectid="{{subject_id}}" data-title="{{item.subject_title}}" data-num="{{item.buy_num}}" data-price="{{item.price}}" bindtap="addNum"></image>
-                </view>
+                <text class="section_buy_num" wx:if="{{item.buy_num > 0}}">{{item.buy_num}}</text>
+
+                <image class='section_buy' style="width: 40rpx; height: 40rpx;vertical-align:text-bottom;" src="/pages/image/index/add.png" data-jdx="{{jdx}}" data-subjectid="{{subject_id}}" data-title="{{item.subject_title}}" data-num="{{item.buy_num}}" data-price="{{item.price}}"
+                  bindtap="addNum"></image>
 
               </view>
 
