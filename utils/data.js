@@ -14,7 +14,7 @@ function getIndexNavSectionData() {
       {
         subject_id:1,
         subject_title: "六鳌头水紫菜 /斤",
-        buy_num:0,
+        buy_num:99,
         stock: 1,
         imagepath: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523725911011&di=675ad3bc121fc3eb913a47b74ca7608d&imgtype=0&src=http%3A%2F%2Fdimg.cnlist.org%2Fimage%2Fupload%2F5a%2Fc8%2F87%2Ff9%2F5ac887f923c5d7ef94a900bcbc25df63.jpg",
         price: "￥100",

@@ -55,13 +55,39 @@
               <view class="section_con_price_and_buy">
                 <text class="section_con_price">{{item.price}}</text>
 
-                <image class='section_buy_reduce' style="width: 40rpx; height: 40rpx;vertical-align:text-bottom;" src="/pages/image/index/reduce.png" data-jdx="{{jdx}}" data-subjectid="{{subject_id}}" data-title="{{item.subject_title}}" data-num="{{item.buy_num}}" wx:if="{{item.buy_num>0}}"
-                  data-price="{{item.price}}" bindtap="reduceNum"></image>
-
-                <text class="section_buy_num" wx:if="{{item.buy_num > 0}}">{{item.buy_num}}</text>
-
-                <image class='section_buy' style="width: 40rpx; height: 40rpx;vertical-align:text-bottom;" src="/pages/image/index/add.png" data-jdx="{{jdx}}" data-subjectid="{{subject_id}}" data-title="{{item.subject_title}}" data-num="{{item.buy_num}}" data-price="{{item.price}}"
-                  bindtap="addNum"></image>
+                <image class='section_buy_reduce' 
+                style="width: 40rpx; height: 40rpx;vertical-align:text-bottom;" 
+                src="/pages/image/index/reduce.png" 
+                data-jdx="{{jdx}}" 
+                data-subjectid="{{subject_id}}" 
+                data-title="{{item.subject_title}}" 
+                data-num="{{item.buy_num}}" 
+                wx:if="{{item.buy_num>0}}"
+                data-price="{{item.price}}" 
+                bindtap="reduceNum">
+                </image>
+                <text class="section_buy_num" style='vertical-align:text-bottom;' wx:if="{{item.buy_num > 0}}">{{item.buy_num}}</text>
+                <block wx:if="{{item.buy_num <99}}">
+                  <image class='section_buy' style="width:40rpx; height:40rpx;vertical-align:text-bottom;" 
+                  src="/pages/image/index/add.png" 
+                  data-jdx="{{jdx}}" 
+                  data-subjectid="{{subject_id}}" 
+                  data-title="{{item.subject_title}}" 
+                  data-num="{{item.buy_num}}" 
+                  data-price="{{item.price}}"
+                  bindtap="addNum">
+                  </image>
+                </block>
+                <block wx:else>
+                  <image class='section_buy' style="width:40rpx; height:40rpx;vertical-align:text-bottom;" 
+                  src="/pages/image/index/unadd.png" 
+                  data-jdx="{{jdx}}" 
+                  data-subjectid="{{subject_id}}" 
+                  data-title="{{item.subject_title}}" 
+                  data-num="{{item.buy_num}}" 
+                  data-price="{{item.price}}"
+                  bindtap=""></image>
+                </block>
 
               </view>
 

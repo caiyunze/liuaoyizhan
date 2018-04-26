@@ -114,34 +114,30 @@
 
 /* 价格数量 */
 .section_con_price_and_buy{
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between; 
-  margin-top:15px; 
 }
 .section_con_price {
-  width: 180rpx;
   color: #d24a58;
+  font-size: 15px;
 }
 
 .section_buy_reduce{
-  width: 40rpx;
-  height: 40rpx;
+  position: absolute;
+  right: 140rpx
+  
 }
-.section_buy_reduce image{
-  width: 100%;
-  height: 100%;
+.section_buy_num{
+  font-size: 15px;
+  color: #d24a58;
+  position: absolute;
+  right: 105rpx;
+}
+.section_buy{
+  position: absolute;
+  right: 60rpx
 }
 
-.section_buy{
-  width: 40rpx;
-  height: 40rpx;
-}
-.section_buy image{
-  width: 40rpx;
-  height: 40rpx;
-}
 
 
 
