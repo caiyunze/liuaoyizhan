@@ -1,0 +1,52 @@
+/* pages/detail/detail.wxss */
+/*轮播示面板指示点样式*/
+.swiper-box {
+  width: 100%;
+  margin: 0rpx;
+  height: 500rpx;
+  margin-bottom: 5rpx;
+}
+.swiper-box image {
+  display: inline-block;
+  width: 100%;
+  height: 500rpx;
+  
+}
+
+
+/* 标题文字样式 */
+.section_detail_title {
+  font-size: 45rpx;
+  line-height: 60rpx;
+  font-weight:bold;
+  margin-bottom: 5rpx;
+  padding-left: 10px;
+}
+/* 价格 */
+.detail_price{
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+  padding-left: 10px;
+}
+
+.price{
+  color: #d24a58;
+  font-size: 25px;
+}
+.re_price{
+  color: #C0C0C0;
+  font-size: 15px;
+  text-decoration: line-through
+}
+
+.line{
+width:100%;
+height:20rpx;
+background:#E8E8E8;
+}
+.section_ps{
+  padding-left: 10px;
+  font-weight:bold;
+  font-size: 30rpx;
+}

@@ -4,7 +4,8 @@
     "pages/about/about",
     "pages/cart/cart",
     "pages/order/order",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

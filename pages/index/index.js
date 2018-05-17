@@ -141,6 +141,23 @@ Page(
       })
     },
 
-    
+    //跳转到详情页
+    navigateDetail: function (ev) {
+      var subject_id = parseInt(ev.target.dataset.subjectid);
+      wx.navigateTo({
+        url: "../detail/detail?subject_id="+subject_id,
+        success: function () {
+          wx.setNavigationBarTitle({
+            title: '商品详情',
+          })
+          wx.showNavigationBarLoading();
+          setTimeout(function () {
+            wx.hideNavigationBarLoading();
+          }, 200)
+        }
 
+      })
+
+    }
+    
   })

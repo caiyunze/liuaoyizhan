@@ -1,0 +1,25 @@
+<!--pages/detail/detail.wxml-->
+<!--导航循环播放-->
+<view class="swiper">
+  <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+    <swiper class='swiper-box' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{navSectionItems_detaildata.imagepath}}" wx:for-item="detail_image" wx:key='this'>
+        <swiper-item>
+          <block wx:if="{{detail_image}}">
+            <image src="{{detail_image}}" class="slide-image" width="380" height="380" />
+          </block>
+          <block wx:else>
+            <image src="/pages/image/推荐/default.jpg" class="slide-image" width="380" height="200" />
+          </block>
+        </swiper-item>
+      </block>
+    </swiper>
+  </scroll-view>
+  <view class="section_detail_title">{{navSectionItems_detaildata.subject_title}}</view>
+  <view class='detail_price'>
+    <text class="price">{{navSectionItems_detaildata.price}}</text>
+    <text class='re_price'>{{navSectionItems_detaildata.re_price}}</text>
+  </view>
+  <view class="line"></view>
+  <view class='section_ps'>商品详情</view>
+</view>

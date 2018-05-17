@@ -51,8 +51,8 @@
   height: 140rpx;
 }
 
-
 /*商品列表样式*/
+
 .nav_section {
   width: 100%;
 }
@@ -79,19 +79,22 @@
 }
 
 /* 商品图片样式 */
+
 .section_images {
   width: 170rpx;
   height: 158rpx;
 }
 
 /* 100%填充 图片四角圆角*/
+
 .section_images image {
-  border-radius: 10px; 
+  border-radius: 10px;
   width: 100%;
   height: 100%;
 }
 
 /* --商品说明外围样式 ---*/
+
 .section_con {
   width: 520rpx;
   font-size: 26rpx;
@@ -99,6 +102,7 @@
 }
 
 /* 标题文字样式 */
+
 .section_con_Sub {
   font-size: 30rpx;
   line-height: 60rpx;
@@ -107,42 +111,43 @@
 }
 
 /*商品说明样式 */
+
 .section_con_message {
   text-overflow: ellipsis;
   margin-bottom: 20rpx;
 }
 
 /* 价格数量 */
-.section_con_price_and_buy{
+
+.section_con_price_and_buy {
   display: flex;
   flex-direction: row;
 }
+
 .section_con_price {
   color: #d24a58;
   font-size: 15px;
 }
 
-.section_buy_reduce{
+.section_buy_reduce {
   position: absolute;
-  right: 140rpx
-  
+  right: 140rpx;
 }
-.section_buy_num{
+
+.section_buy_num {
   font-size: 15px;
   color: #d24a58;
   position: absolute;
   right: 105rpx;
 }
-.section_buy{
+
+.section_buy {
   position: absolute;
-  right: 60rpx
+  right: 60rpx;
 }
 
-
-
-
-
 /*首页全部商品按钮 */
+
 .all_goods {
   font-size: 30rpx;
 }
